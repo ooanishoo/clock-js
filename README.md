@@ -1,5 +1,10 @@
 # **Analog Clock**
 
+Click [here](https://clock-js-brown.vercel.app/) for a demo 👀
+
+![2023-07-11 at 9 33 pm](https://github.com/ooanishoo/clock-js/assets/9260574/1fd581c5-a0c7-465e-914e-82fb28ab1f0e)
+
+
 This is a simple analog clock implemented using HTML, CSS, and Vanilla JavaScript. The clock displays the current time with hour, minute, and second hands.
 
 ## **Motivation:**
