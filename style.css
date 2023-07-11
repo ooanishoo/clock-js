@@ -1,30 +1,23 @@
-body {
+.frame {
+  background-color: #e8e8e8;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #000;
-  color: #fff;
+  box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+    inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
+    0em 1.2em 1.2em rgba(0, 0, 0, 0.3), inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
 }
 
 .clock {
   width: 400px;
   height: 400px;
-  background-color: #fff;
   color: #000;
   border-radius: 50%;
   position: relative;
-  box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.1);
-}
-
-.number {
-  font-size: 2rem;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transform: rotate(calc(var(--count) * 30deg));
 }
 
 .hand {
@@ -33,16 +26,11 @@ body {
   bottom: 50%;
   width: 2%;
   height: 40%;
-  background-color: #000;
+  background-color: var(--primary-color);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   transform: translate(50%);
   transform-origin: bottom;
-}
-
-.number span {
-  display: block;
-  transform: rotate(calc(var(--count) * -30deg));
 }
 
 .hour {
@@ -59,7 +47,7 @@ body {
 .second {
   width: 1%;
   height: 45%;
-  background-color: red;
+  background-color: var(--secondary-color);
   transform: rotate(290deg);
 }
 
@@ -68,9 +56,60 @@ body {
   width: 20px;
   height: 20px;
   background-color: black;
-  border: 2px solid red;
+  border: 2px solid var(--secondary-color);
   right: 50%;
   top: 50%;
   border-radius: 50%;
   transform: translate(50%, -50%);
+}
+
+.number {
+  font-size: 2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(calc(var(--count) * 30deg));
+  color: var(--main-text-color);
+}
+
+.number span {
+  display: block;
+  transform: rotate(calc(var(--count) * -30deg));
+}
+
+/* miscellaneous styles */
+
+:root {
+  --main-bg-color: #e5e5e5;
+  --main-text-color: #828282;
+  --primary-color: #3a3a3a;
+  --secondary-color: #30bced;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.digital-clock {
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
