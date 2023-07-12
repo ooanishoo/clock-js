@@ -24,3 +24,10 @@ Feel free to explore the code and make modifications according to your needs. Ex
 ## **License**
 
 This project is licensed under the [MIT License](https://chat.openai.com/LICENSE). You are free to modify, distribute, and use the code for personal and commercial purposes.
+
+
+## Support Me
+
+If you like my work, you can support me by buying me a coffee. I would really appreciate it!
+
+<a href="https://www.buymeacoffee.com/ooanishoo"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="200" /></a>
